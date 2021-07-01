@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Bootstrap CSS -->    
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="xyz.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>TEMPLATE 21</title>
+
+	<style>
+#splitimg {
+    width: 100%;
+    height: 600px;
+}
+.hide {
+    background-color:  #FFFFFF;
+    width:  10px;
+    height: 40px;
+}
+.transp {
+    background-image: url("images21/img3.jpg");
+    border: 2px solid #000000;
+    width: 100%;
+    height: 600px;
+}
+
+</style>
+
+<script type="text/javascript"
+            src="//code.jquery.com/jquery-1.9.1.js">
+  </script>
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="/css/result-light.css">
+    
+    <script type="text/javascript" 
+            src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+    <link rel="stylesheet" 
+          type="text/css" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+          type="text/css" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- JavaScript for adding 
+     slider for multiple images
+     shown at once-->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".carousel .item").each(function() {
+                var i = $(this).next();
+                i.length || (i = $(this).siblings(":first")),
+                  i.children(":first-child").clone().appendTo($(this));
+                
+                for (var n = 0; n < 7; n++)(i = i.next()).length ||
+                  (i = $(this).siblings(":first")),
+                  i.children(":first-child").clone().appendTo($(this))
+            })
+        }); 
+    </script>
+
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="font-size: 40px; font-weight: bolder;">Directory</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative;left: 15%;">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="font-size: 20px;padding: 15px; padding-right: 25px;"> <b>Home</b> <i class="fas fa-angle-down" id="back_arrow" aria-hidden="true" style="color:grey;"></i> <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" style="color: black; font-size: 20px; padding-right: 25px;" href="#" >More Info</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: black; font-size: 20px; padding-right: 25px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Examples
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Example1</a>
+          <a class="dropdown-item" href="#">Example2</a>
+        </div>
+      </li>
+	
+	<li class="nav-item">
+	  <a class="nav-link" style="color: black; font-size: 20px; padding-right: 25px;" href="#">Submit Listing</a>
+
+	<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: black; font-size: 20px; padding-right: 25px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plugins
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">P1</a>
+          <a class="dropdown-item" href="#">P2</a>
+        </div>
+      </li>
+
+	<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="color: black; font-size: 20px; padding-right: 25px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Elements
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Element1</a>
+          <a class="dropdown-item" href="#">Element2</a>
+        </div>
+      </li>
+      
+	<li class="nav-link" href="#" style="padding: 15px;"><i class="fas fa-bars"></i></a>
+	<li class="nav-link" href="#" style="padding: 15px;"><i class="fas fa-plus-square"></i></a>
+	<li class="nav-link" href="#" style="padding: 15px;"><i class="far fa-user"></i></a>
+	<li class="nav-link" href="#" style="padding: 15px;"><i class="fas fa-globe"></i></a>
+	<li class="nav-link" href="#" style="padding: 15px;"><i class="fas fa-shopping-cart"></i></a>
+    </ul>
+  </div>
+ </nav> 
+
+<table id="splitimg" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+	<td class="transp" style="border: none; position: relative; top: -20px; background-size: cover; background-position: top; background-size: 120%;">
+	
+   <div class="text-white">
+
+     <h1 class="text-center"><b>Explore and discover many <br> fine places in your city</b></h1>
+	
+     <div class="searchbar">
+         <div class="search">
+
+	    <i class="fa fa-search" <!--style="color: black; padding: 1.08%; background-color: white; --> "></i>
+            <input type="text" class="searchTerm" placeholder="Search keyword">
+		
+            <input type="submit" class="searchButton" value="Search">            
+           </button>
+         </div>
+      </div>
+
+      <p style="font-size:13px;"class="text-center">Refine your search with categories, locations and radius of your position</p>
+
+    </div>
+
+	 </td>
+	</tr>
+
+	<tr>
+	<td class="hide" style="height: 20px; "></td>
+	<tr style=" height: 20px;"></tr>
+	</tr>
+
+	<tr>
+	<td class="transp" style="border:none; background-size: cover;background-position: bottom ;background-size: 125%;"> 
+
+	<div class="threeicons" style="width: 150px; position: relative; left: 700px; bottom: 110px; background-color: #2c48c3;">
+	<div class="block">
+	<i class="far fa-folder" style="color: white; padding: 10%; background-color: #2c48c3;"></i>
+	<i class="fas fa-map-marker-alt" style="color: white; padding: 10%; background-color: #2c48c3;"></i>
+	<i class="fas fa-search-location" style="color: white; padding: 10%; background-color: #2c48c3;"></i>
+	</div>
+	</div>
+
+	<div class="downblock" style="background-color:#f3f4f6; block-size: 50%; align-content: end; position: relative; bottom: -22%;">
+
+<!--
+<div class="float-container">
+
+<div class="angle" style="position: relative; left: -42px; top: 50px;">
+<i class="fas fa-angle-left fa-3x"></i>
+</div>
+
+  <div class="float-child" style="height: 185.6px;border-radius: 5%;position:relative; top:-50px;">
+  <i class="fas fa-shopping-basket fa-2x" style="position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Retail <br> Shopping</p>
+  </div>
+</div>
+
+<div class="float-child" style="position: relative;left: 25px; height: 185.6px;border-radius: 5%; top:-50px;">
+  <i class="far fa-futbol fa-2x" style="position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Sports & Recreation</p>
+  </div>
+</div>
+
+<div class="float-child" style="position: relative;left: 55px; height: 185.6px;border-radius: 5%; top:-50px;">
+  <i class="fas fa-plane-departure fa-2x" style="position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Travel & Transport</p>
+  </div>
+</div>
+
+<div class="float-child" style="position: relative;left: 85px; height: 185.6px;border-radius: 5%; top:-50px;">
+  <i class="fas fa-truck fa-2x" style="position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Automotive</p>
+  </div>
+</div>
+
+<div class="float-child" style="position: relative;left: 110px; height: 185.6px;border-radius: 5%; top:-50px;">
+  <i class="fas fa-briefcase fa-2x" style="position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Business Services</p>
+  </div>
+</div>
+
+<div class="float-child" style="position: relative;left: 135px; height: 185.6px;border-radius: 5%; top:-50px;">
+  <i class="fas fa-book fa-2x" style=" position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text">Education</p>
+  </div>
+</div>
+
+<div class="angle" style="position: relative; right: -150px; top: 1px;" >
+<i class="fas fa-angle-right fa-3x"></i>
+</div>
+
+	</div>
+
+-->
+
+<div class="container">
+        <!-- bootstrap card with row name myCarousel as row 1-->
+        <div class="container" style="position: relative;top: 50px;width: 920px;left: -130px;"">
+            <div class="carousel-inner" style="height: 212px; width: 1290px; position: relative; left: -62px;">
+
+                <div class="float-child" style="height: 170.6px;border-radius: 5%;position:relative;top: 20px;">
+  <i class="fas fa-shopping-basket fa-2x" style="color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Retail <br> Shopping</p>
+  </div>
+</div>
+                <div class="float-child" style="position: relative;left: 25px;height: 170.6px;border-radius: 5%;top: 20px;">
+  <i class="far fa-futbol fa-2x" style=" color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Sports &amp; Recreation</p>
+  </div>
+</div>
+                <div class="float-child" style="position: relative;left: 53px;height: 170.6px;border-radius: 5%;top: 20px;">
+  <i class="fas fa-plane-departure fa-2x" style=" color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Travel &amp; Transport</p>
+  </div>
+</div>
+
+		<div class="float-child" style="position: relative;left: 81px;height: 170.6px;border-radius: 5%;top: 20px;">
+  <i class="fas fa-truck fa-2x" style="color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Automotive</p>
+  </div>
+</div>
+
+		<div class="float-child" style="position: relative;left: 107px;height: 170.6px;border-radius: 5%;top: 20px;">
+  <i class="fas fa-briefcase fa-2x" style="color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Business Services</p>
+  </div>
+</div>
+
+		<div class="float-child" style="position: relative;left: 130px;height: 170.6px;border-radius: 5%;top: 20px;">
+  <i class="fas fa-book fa-2x" style=" color: blue; position: relative; top: 42px; left: 65px;"></i>
+  <div class="card-body" style="padding: 2.25rem;">
+    <p class="card-text" style="color: royalblue;">Education</p>
+  </div>
+
+                </div>
+            </div> 
+	
+	<a class="left carousel-control" style="color: grey;" href="#myCarousel" data-slide="prev">
+          <i class="glyphicon glyphicon-chevron-left">
+          </i>
+          </a>
+          
+	  <a class="right carousel-control"  href="#myCarousel" data-slide="next" style="color: grey; position: relative; right: -1250px;">
+              <i class="glyphicon glyphicon-chevron-right">
+              </i>
+          </a>
+  
+      </div>
+   </div>
+         
+	</td>
+	</tr>
+	</table>
+
+ <div class="container-fluid">
+	<h1 class="headingsecond"><b> <span>Featured Places</span> in Your City</b></h1>
+ <div class="row" style="padding: 10%; padding-top: 3%; padding-block-end: 3%;"> 
+
+  <div class="fourcolumn" style="padding: 2%;">
+  <div class="cards" style="width: 25rem; border-radius: 3%; box-shadow: 0px 16px 16px #eee;">
+    <img src="images21/hamburger.jpg" class="card-img-top" alt="Y&M Hamburger" 
+     style="border-top-left-radius: 3%; border-top-right-radius: 3%; height: 10vw;">
+    <div class="card-body" style="text-align: center; height: 12vw;">
+    <h4 class="card-text" ><b>Y&M Hamburger</b></h4>
+    <p1>Colorful Hamburger Variations</p1><br>
+	<p2>Fast Food</p2> 
+	<p2> Restaurant</p2>  
+	<div class="stars" style="padding: 6%"><span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="fourcolumn" style="padding: 2%;">
+  <div class="cards" >
+    <img src="images21/heels.jpg" class="card-img-top" alt="Fashion Shoes"
+     style="border-top-left-radius: 3%; border-top-right-radius: 3%; height: 10vw;">
+    <div class="card-body" style="text-align: center;">
+    <h4 class="card-text" ><b>Fashion Shoes</b></h4>
+    <p1>Nullam ut nisi id justo mattis</p1><br>
+	<p2>Retail Shopping</p2>
+	<p2>Shoes</p2>
+	<p2>Woman</p2>
+	<div class="stars" style="padding: 6%"><span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="fourcolumn" style="padding: 2%;">
+  <div class="cards" >
+    <img src="images21/cycling.jpg" class="card-img-top" alt="Mountain Cycling"
+     style="border-top-left-radius: 3%; border-top-right-radius: 3%; height: 10vw;">
+    <div class="card-body" style="text-align: center;">
+    <h4 class="card-text" ><b>Mountain Cycling</b></h4>
+    <p1>Adrenaline at its Finest</p1><br>
+	<p2>Cycling</p2>
+	<p2>Outdoor</p2>
+	<div class="stars" style="padding: 6%"><span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="fourcolumn" style="padding: 2%;">
+  <div class="cards" >
+    <img src="images21/outdoortravel.jfif" class="card-img-top" alt="Outdoor Travel" 
+     style="border-top-left-radius: 3%; border-top-right-radius: 3%; height: 10vw;">
+    <div class="card-body" style="text-align: center;">
+    <h4 class="card-text" ><b>Outdoor Travel</b></h4>
+    <p1>Morbi suscipit porta justo, sit amet</p1><br>
+	<p2>Outdoor</p2>
+	<p2>Sports & Recreation</p2>
+	<div class="stars" style="padding: 6%"><span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span></div>
+    </div>
+  </div>
+  </div>
+
+ </div>
+</div>
+
+       <div class="container-fluid" style="height: 340px; padding-left: 15%; padding-bottom:15%;">
+	<p style="text-align: start;"><b>NAVIGATION</b></p>
+
+       <div class="row" style="height: 95%;"> 
+
+	
+	<div class="threecolumn">
+ 	<div class="card bg-white text-white ">
+  	 <img src="images21/connecticut.jfif" class="card-img" alt="Connecticut" style="height: 300px; border-radius: 3%; box-shadow: 0px 4px 15px 7px #5a626b;">
+  	  <div class="card-img-overlay">
+    	  <h3 class="card-title" style="position: relative;top: 60%;">Connecticut</h3>
+    	  <p3 class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p3>
+  	  </div>
+	</div>
+	</div>
+
+	<div class="threecolumn">
+ 	<div class="card bg-white text-white">
+  	 <img src="images21/njersey.jpg" class="card-img" alt="NewJersey" style="height: 300px; border-radius: 3%; box-shadow: 0px 4px 15px 7px #5a626b;">
+  	  <div class="card-img-overlay">
+    	  <h3 class="card-title" style="position: relative;top: 60%;">New Jersey</h3>
+    	  <p3 class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p3>
+  	  </div>
+	</div>
+	</div>
+
+	<div class="threecolumn">
+ 	<div class="card bg-white text-white">
+  	 <img src="images21/newyork.jpg" class="card-img" alt="NewYork" style="height: 300px; border-radius: 3%; box-shadow: 0px 4px 15px 7px #5a626b;">
+  	  <div class="card-img-overlay">
+    	  <h3 class="card-title" style="position: relative;top: 60%;">New York</h3>
+    	  <p3 class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p3> 
+  	  </div>
+	</div>
+	</div>
+
+	</div>
+	</div>
+
+	
+	<div class="register" style="background: #2d48c2;width: 100%;padding: 4%;position: relative; top: 95px;height: 285px;">
+	<h1 style="position: relative;bottom: 78px; color: white;"> <strong>Register Your Company into Our Database</strong></h1>
+	<div class="lcont" ><p4 style="text-align: center;">Visitors can register to your portal as users and submit their own items. You can create different packages and by connecting with your
+	<br>PayPal or Stripe account charge users for registration to your directory portal.</p4>
+	</div>
+	<div class="textbtn">
+	<div class="titlebtn">Register Now for Free</div>
+	</div>
+	</div>
+	
+	<div class="lblock" style="width: 100%;height: 295px;background: black;padding: 1%;position: relative;top: 95px;">
+	
+	<div class="row" style="height: 55%;">
+
+	<div class="lp" style="width: 30%;position: relative;left: 5%; top: 9%;height: 100%;">
+	<h2 style="color: white;"><b>Directory</b></h2>
+    	<p style="text-align: left;color: lightgrey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+	<p style="position: relative;bottom: 9%;text-align: left;color: white;"><b>Best selling directory theme on the market!</b></p>
+	</div>
+	
+
+	<div class="lp" style="width: 40%;margin: 6%;position: relative;bottom: 44%; left: 10%;color: white;">
+	<span>
+	<span class="s-wrap">
+	<h4 style="font-size: small; padding-bottom: 2%;"><strong>LATEST ADDITION</strong></h4>
+	<img src="images21/hamburger.jpg" alt="Y&M Hamburger" style="width: 85px;border-radius: 20%;">
+	<h3 style="position: relative;bottom: 26%;left: 18%;font-size: large;color: seagreen;font-weight: bold;">Y&M Hamburger</h3>
+	<div class="stars" style="position: relative;bottom: 25%;left: 18%;"><span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span></div></span>
+	<p style="text-align: left;width: 335px;position: relative;bottom: 23%; color: lightgrey;">Duis aute irure dolor in reprehenderit in voluptate velit esse ut labore et dolore magna aliqua cillum dolore eu fugiat nulla pariatur.</p>
+	</span>
+	</div>
+
+	<div class="lp"style="height: 260px;width: 200px;position: relative;right: 150px;top: 5%;">
+	<div class="card" style="width: 18rem; background: black;">
+  	<div class="card-body">
+  	<h4 class="card-title" style="color: white;font-size: small;"><strong>GET IN TOUCH</strong></h4>
+    	<p class="card-text" style="color: lightgrey;width: 300px;text-align: left;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    	<a href="#" class="btn btn-primary" style="background-color: limegreen;"><b>Contact Us</b></a>
+  	</div></div>
+	</div>
+	
+	</div></div>
+
+	<footer class="footer" style="background: #1f1c31;position: relative;top: 95px;height: 6rem;">
+	<p5 class="lfooter">©2020 Copyright by AIT.<span> All rights reserved.</span></p5>
+
+	<div class="ifooter" style="position: relative;width: 50%;font-size: medium;left: 65%;">
+	<ul id="footer-menu" style="position: relative;right: 35%;">
+	<a href=" " style="padding: 2%;color: white;">Home</a>
+	<a href=" " style="padding: 2%;color: white;">Blog</a>
+	<a href=" " style="padding: 2%;color: white;">Elements</a>
+	<a href=" " style="padding: 2%;color: white;">Features</a>
+	</ul>
+	</div>
+
+	<div class="iconsf">
+	<a href="http://www.facebook.com" style="padding:1%;color: white;">
+	<i class="fab fa-facebook-square"></i>
+	</a>
+
+	<a href="http://www.twitter.com" style="padding:1%;color: white;">
+	<i class="fab fa-twitter-square"></i>
+	</a>
+
+	<a href="https://www.youtube.com" style="padding:1%;color: white;">
+	<i class="fab fa-youtube-square"></i>
+	</a>
+
+	<a href="https://dribbble.com" style="padding:1%;color: white;">
+	<i class="fab fa-dribbble-square"></i>
+	</a>
+
+	</div>
+	
+	</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

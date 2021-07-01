@@ -1,0 +1,170 @@
+.searchbar.search {
+  position: relative;
+  display: flex;
+}
+.searchTerm{
+height: 50px;
+width: 500px;
+}
+
+.searchbar.searchTerm {
+  
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  padding-right: 5px;
+  padding-left: 0px
+  outline: none;
+  color: #9DBFAF;
+}
+.searchbar .searchTerm:focus{
+  color: dark blue;
+}
+.searchButton {
+width: 150px;
+background-color: #2c48c3;
+}
+.searchbar .searchButton {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #2c48c3;
+  background: #2c48c3;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchbar.searchButton i{
+  color: grey;
+}
+
+.searchbar {
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+h1{
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  padding-top: 80px;
+}
+p{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.float-container {
+    background-color: #f3f4f6;
+    padding: 50px;
+}
+
+.float-child {
+    width: 15%;
+    float: left;
+    padding: 20px;  
+    background-color: white;
+}  
+.carousel-control.left {
+    background-image: none;
+    position: relative;
+    top: -110px;
+    left: -90px;
+}
+.carousel-control.right {
+    background-image: none;
+    position: relative;
+    top: -110px;   
+}
+.carousel-inner {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+.headingsecond span{
+    color: #2d48c2;
+}
+.
+.fourcolumn{
+    padding: 2%;
+}
+.cards{ 
+   width: 25rem; 
+   border-radius: 3%;
+   height: 90%;
+   box-shadow: 0px 16px 16px #eee;
+}
+p1{ 
+    padding: 2%;
+    color: #a5a5a5;
+    text-shadow: 0px 1px 12px #b8b3b3;
+}
+p2{
+     color: #91af91;
+     background-color: #e7f6e6;
+     padding-top: 1%;
+}
+.threecolumn{
+    width: 26%;
+    padding: 2%;
+}
+p3{
+    text-align: start;
+    position: relative;
+    top: 170px;
+    font-size: 11px;
+}
+h5{
+    text-align: left;
+    position: relative;
+    top: 165px;
+    font-size: large;
+    font-weight: bold;
+}
+p4{
+    text-align: center;
+}
+.lcont{
+    text-align: center;
+    color: lightgrey;
+    position: relative;
+    bottom: 55%;
+    font-size:16px;
+}
+.textbtn{
+    width: 240px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    bottom: 33%;
+}
+.titlebtn{
+    color: #2d48c3;
+    background: white;
+    width: 235px;
+    height: 35px;
+    padding: 3%;
+    font-weight: bolder;
+}
+.checked {
+  color: orange;
+}
+.lfooter span{
+    color: grey;
+}
+.lfooter{
+    position: relative;
+    right: 37%;
+    top: 40%;
+    font-size: 155%;
+    color: white;
+}
+.iconsf{
+    width: 50%;
+    position: relative;
+    bottom: 67%;
+    left: 66%;
+    height: 20%;
+    font-size: 25px;
+}
+}
